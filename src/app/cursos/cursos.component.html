@@ -1,8 +1,21 @@
-<p class="mult-p">Meu nome é {{ nome }}</p>
-<p class="mult-p">Testando com função {{ getValor() }}</p>
-<p class="mult-p">Soma {{ 1 + 1 }}</p>
+<div id="cursos">
+  Nome: 
+  <input
+    type="text"
+    (keyup)="alteraNome(valor.value)" 
+    #valor
+  />
+  Idade:
+  <input
+    type="number"
+    [(ngModel)]="idade"
+  />
+  <p>Nome digitado: {{nome}}</p>
+  <p>Idade digitada: {{idade}}</p>
 
-<img src="{{urlImage}}" alt="albedo">
-
-
-
+  <ul>
+    <li *ngFor="let item of list">
+      {{itemt}}
+    </li>
+  </ul>
+</div>
