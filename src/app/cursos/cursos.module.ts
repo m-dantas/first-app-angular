@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CursosComponent } from './cursos.component';
+import { FormsModule } from '@angular/forms'
 
 
 
@@ -8,7 +9,8 @@ import { CursosComponent } from './cursos.component';
   declarations: [CursosComponent],
   exports: [CursosComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class CursosModule { }
